@@ -1,0 +1,55 @@
+-- MySQL dump 10.13  Distrib 8.0.43, for Win64 (x86_64)
+--
+-- Host: 127.0.0.1    Database: qlsv
+-- ------------------------------------------------------
+-- Server version	9.4.0
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!50503 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `students`
+--
+
+DROP TABLE IF EXISTS `students`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `students` (
+  `maSV` varchar(45) NOT NULL,
+  `hoTen` varchar(45) DEFAULT NULL,
+  `ngaySinh` datetime DEFAULT NULL,
+  `nganhDaoTao` varchar(45) DEFAULT NULL,
+  `diemTB` double DEFAULT NULL,
+  `lopSH` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`maSV`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `students`
+--
+
+LOCK TABLES `students` WRITE;
+/*!40000 ALTER TABLE `students` DISABLE KEYS */;
+INSERT INTO `students` VALUES ('4251050005','Trần Thị Bình','2002-07-25 00:00:00','CNTT',7.7,'42A'),('4351050003','Vũ Thị Hồng','2002-08-22 00:00:00','KTPM',5.9,'43C'),('4351050006','Phạm Thị Mai','2001-11-10 00:00:00','CNTT',6.7,'43D'),('4351050007','Nguyễn Văn Hưng','2003-05-20 00:00:00','KTPM',9.2,'43A'),('4451050004','Phạm Thị Dung','2003-03-18 00:00:00','CNTT',8.3,'44C'),('4451050149','Nguyễn Pôn','2003-01-21 00:00:00','KTPM',8.5,'44B'),('4551050002','Trần Thị Lan','2002-09-12 00:00:00','KTPM',6.5,'45A'),('4551050008','Nguyễn Văn An','2002-02-15 00:00:00','CNTT',7.8,'45A'),('4551050130','Lê Thị Su Na','2004-03-30 00:00:00','CNTT',7.8,'45A');
+/*!40000 ALTER TABLE `students` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2025-09-13 23:02:24
